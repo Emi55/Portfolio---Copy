@@ -1,0 +1,68 @@
+/* src code https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_parallax&stacked=h */
+
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Patrick Hand', cursive;}
+body, html {
+  height: 100%;
+  color:black;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* about */
+.profile{
+  width: 50%;
+  height: 60%;
+}
+
+.little-about{
+  padding-top: 10%;
+}
+
+/* portfolio */
+.portfolio{
+  font-size:36px;
+}
+
+/* contact section */
+.submit-btn{
+  margin: 10px;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('https://images.unsplash.com/photo-1548032885-b5e38734688a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c2VhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("https://images.unsplash.com/photo-1518998053901-5348d3961a04?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z2FsbGVyeXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+
